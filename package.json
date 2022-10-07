@@ -1,10 +1,11 @@
 {
-  "name": "vue-headful",
-  "version": "3.0.0",
-  "description": "Set <head> properties (e.g. title and meta tags) in Vue.js apps.",
+  "name": "vue3-headful",
+  "version": "1.0.0",
+  "description": "Set <head> properties (e.g. title and meta tags) in Vue.js (Vue3) apps.",
   "keywords": [
     "Vue.js",
     "Vue",
+    "Vue3",
     "head",
     "title",
     "meta",
@@ -13,16 +14,15 @@
     "seo",
     "sharing"
   ],
-  "homepage": "https://github.com/m-guidali/vue-headful",
-  "bugs": "https://github.com/m-guidali/vue-headful/issues",
+  "homepage": "https://github.com/mrto1/vue3-headful",
+  "bugs": "https://github.com/mrto1/vue3-headful/issues",
   "license": "MIT",
-  "author": "troxler",
+  "author": "mrto1",
   "files": [
     "dist",
     "readme.md"
   ],
   "main": "dist/vue-headful.js",
-  "repository": "github:troxler/vue-headful",
   "scripts": {
     "dev": "(cd demo; poi)",
     "build": "babel src/ --presets babel-preset-env --out-dir dist/",
