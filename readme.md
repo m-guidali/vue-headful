@@ -1,12 +1,12 @@
-# vue-headful
+# vue3-headful
 
-vue-headful allows to set the title and several meta tags of your document from any Vue.js view.
-vue-headful is a tiny wrapper around [Headful](https://github.com/troxler/headful), a generic library to set meta tags with JavaScript.
+vue3-headful allows to set the title and several meta tags of your document from any Vue.js view in any Vue3 App.
+vue3-headful is a tiny wrapper around [Headful](https://github.com/troxler/headful), a generic library to set meta tags with JavaScript.
 
 ## Install
 
 ```
-npm i vue-headful
+npm i vue3-headful
 ```
 
 ## Usage
@@ -15,9 +15,9 @@ Register the component:
 
 ```js
 import Vue from 'vue';
-import vueHeadful from 'vue-headful';
+import vue3Headful from 'vue3-headful';
 
-Vue.component('vue-headful', vueHeadful);
+Vue.component('vue3-headful', vue3Headful);
 
 new Vue({
     // your configuration
@@ -39,12 +39,12 @@ And then use the `vue-headful` component in every of your views:
 
 ## Documentation
 
-vue-headful is only a wrapper around [Headful](https://github.com/troxler/headful) and by itself does not do that much.
-vue-headful supports all the [head properties that are supported by Headful](https://github.com/troxler/headful#documentation).
+vue3-headful is only a wrapper around [Headful](https://github.com/troxler/headful) and by itself does not do that much.
+vue3-headful supports all the [head properties that are supported by Headful](https://github.com/mrto1/vue3-headful#documentation).
 You can find a non-complete list of head properties in the following example:
 
 ```html
-<vue-headful
+<vue3-headful
     title=""
     description=""
     keywords=""
@@ -90,7 +90,7 @@ If you want to **remove a previously defined attribute from an element**, you ca
 -->
 ```
 
-Note that neither Headful nor vue-headful add missing HTML elements, they only add attribute values.
+Note that neither Headful nor vue3-headful add missing HTML elements, they only add attribute values.
 So it is important that you add everything that you want to have populated in your HTML first.
 For example, to specify the title and description you have to prepare the HTML as follows.
 
@@ -113,12 +113,12 @@ For example, to specify the title and description you have to prepare the HTML a
 </html>
 ```
 
-vue-headful also supports dynamic properties (e.g. `v-bind:title="variableName"` or `:title="variableName"`) and adds watchers to everything.
+vue3-headful also supports dynamic properties (e.g. `v-bind:title="variableName"` or `:title="variableName"`) and adds watchers to everything.
 That means you can also set head properties asynchronously, for example after an API request.
 
 ```html
 <template>
-    <vue-headful
+    <vue3-headful
         :title="title"
         description="Static description"
     />
@@ -141,7 +141,7 @@ That means you can also set head properties asynchronously, for example after an
 </script>
 ```
 
-Also see the non-complete list of meta tags and other head properties you can define using vue-headful:
+Also see the non-complete list of meta tags and other head properties you can define using vue3-headful:
 
 * `<html lang>`
 * `<title>`
@@ -163,5 +163,4 @@ For more information on everything you can put into `<head>`, have a look at <ht
 
 ## Compatibility
 
-vue-headful works with every current and most reasonably old web browsers.
-If you need to support older browsers including Internet Explorer, have a look at [Headful: Compatibility](https://github.com/troxler/headful#compatibility).
+vue3-headful works with every current and most reasonably old web browsers.
