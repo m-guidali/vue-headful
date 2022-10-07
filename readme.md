@@ -24,12 +24,12 @@ new Vue({
 });
 ```
 
-And then use the `vue-headful` component in every of your views:
+And then use the `vue3-headful` component in every of your views:
 
 ```html
 <template>
     <div>
-        <vue-headful
+        <vue3-headful
             title="Title from vue-headful"
             description="Description from vue-headful"
         />
